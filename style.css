@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e0e0e0, #cfcfcf);
+    font-family: Arial, sans-serif;
+}
+
+#calculator {
+    background-color: #222;
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+#display {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 3.5rem;
+    text-align: right;       /* ✔ sesuai permintaan */
+    border: none;
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#display:focus,
+#display {
+    transform-origin: right center;   /* mengecil dari kanan */
+}
+
+
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 25px;
+}
+
+button {
+    width: 100%;
+    height: 80px;
+    border: none;
+    border-radius: 15px;
+    background-color: #444;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    background-color: #666;
+}
+
+.operator-btn {
+    background-color: #ff9d28;
+}
+
+.operator-btn:hover {
+    background-color: #ffb55a;
+}
+
+.operator-btn:active {
+    background-color: #ffd08e;
+}
+
+.equal-btn {
+    background-color: #28c76f;
+}
+
+.equal-btn:hover {
+    background-color: #45dd88;
+}
+
+.equal-btn:active {
+    background-color: #6cf3a3;
+}
+
+.clear-btn {
+    background-color: #e63946;
+}
+
+.clear-btn:hover {
+    background-color: #ff5b6a;
+}
+
+.clear-btn:active {
+    background-color: #ff7c88;
+}
